@@ -9,9 +9,18 @@ import java.util.UUID;
 @Document
 public class User {
 
-    @Id
-    private String uuid = UUID.randomUUID().toString();
+//    @Id
+//    private String uuid = UUID.randomUUID().toString();
     private PersonalDetails personalDetails;
+
+//    @Override
+//    public String toString() {
+//        return "User{" +
+//                ", personalDetails=" + personalDetails +
+//                ", educationalDetails=" + educationalDetails +
+//                '}';
+//    }
+
     private EducationalDetails educationalDetails;
 
     public PersonalDetails getPersonalDetails() {
@@ -29,4 +38,8 @@ public class User {
     public void setEducationalDetails(EducationalDetails educationalDetails) {
         this.educationalDetails = educationalDetails;
     }
+
+//    public String getUuid(){
+//        return uuid;
+//    }
 }

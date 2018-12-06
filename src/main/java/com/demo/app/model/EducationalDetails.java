@@ -3,7 +3,7 @@ package com.demo.app.model;
 public class EducationalDetails {
     private String highestQualification;
     private float percentage;
-    private int division;
+
 
     public String getHighestQualification() {
         return highestQualification;
@@ -21,11 +21,4 @@ public class EducationalDetails {
         this.percentage = percentage;
     }
 
-    public int getDivision() {
-        return division;
-    }
-
-    public void setDivision(int division) {
-        this.division = division;
-    }
 }
